@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '~styles/variables.scss';
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/TextaBlack.ttf');
+    font-style: bold;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/TextaMedium.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/TextaLight.ttf');
+    font-style: light;
+    font-weight: light;
+}
+
+body {
+    background: $bg-color;
+    font-family: 'Texta';
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+.bg-primary {
+    background: $color-primary;
+}
+
+.text-primary {
+    color: $color-primary;
+}
