@@ -1,4 +1,4 @@
-import { IToastStore } from '@/types/ToastMessageTypes';
+import { IToastStore } from '@/types/toastMessageTypes';
 import { create } from 'zustand';
 
 export const useToastStore = create<IToastStore>((set) => ({
