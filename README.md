@@ -5,27 +5,27 @@ This was made for my Technical Test regarding my application to Emapta for Full 
 
 Using your preferred front-end framework, build a form to capture one or more applicants.
 The form should capture the following information:
-● First name
-● Last name
-● Mobile number
-● Email
+- First name
+- Last name
+- Mobile number
+- Email
  
 The form will allow the user to add and remove applicants, however, there must be at least one applicant.
 In addition, each applicant will include a checkbox to nominate the primary applicant. There must always be one, and only one, primary applicant.
-Your project should be a standard NPM application that can be run with:
-➢ npm install
+Your project should be a standard NPM application that can be run with:<br/>
+➢ npm install<br/>
 ➢ npm start
 
 # Solution
 
-Since ReactJs and TypeScript are part of the requirements on this position, I decided to use React. To give an output that is close to a real-world app, I then included the usage of SQLite for saving the data which also includes a migration. So the previous data on previous operations won't be gone upon refresh. In this case, both Front-end and Back-end development was done.
+Since ReactJs and TypeScript are part of the requirements for this position, I decided to use React. To give an output close to a real-world app, I then included the usage of SQLite for saving the data which also includes a migration. So the previous data on previous operations won't be gone upon refresh. In this case, both Front-end and Back-end development was done.
 
 ## What was used?
 
 - Knex: for database migration
 - SQLite: simple storage for this test
 - React/TypeScript/Next.js: for building both front-end and back-end
-- Tailwind Css: for faster development on design. 
+- Tailwind CSS: for faster development on design. 
 - SCSS: for styling
 - Winston: for Logging
 - Zustand: for global state management
@@ -33,13 +33,13 @@ Since ReactJs and TypeScript are part of the requirements on this position, I de
 
 ## Front-end
 
-It only consist of one page which can be accessed in `http://localhost:3000` when run locally.
+It only consists of one page which can be accessed in `http://localhost:3000` when run locally.
 
 ## Back-end
-Following endpoint was created and used:
-- `GET /api/applicants` : returns all applicants
-- `POST /api/applicants` : creates an applicant which then returns the inserted id to support dynamic appending of applicant in the front-end
-- `DELETE /api/applicants?id={id}` : used to delete an applicant. Primary applicant cannot be deleted since there should always be one and one only primary applicant. Therefore, deletion will also fail if there is only 1 applicant remains.
+The following endpoint was created and used:
+- `GET /api/applicants`: returns all applicants
+- `POST /api/applicants`: creates an applicant which then returns the inserted ID to support dynamic appending of the applicant in the front-end
+- `DELETE /api/applicants?id={id}` : used to delete an applicant. The primary applicant cannot be deleted since there should always be only one primary applicant. Therefore, deletion will also fail if there is only 1 applicant remains.
 - `POST /api/applicants/primary`: used to update the primary applicant. Only one applicant can be set to primary.
 
 Applicant Schema:
@@ -59,7 +59,7 @@ Applicant Schema:
 - `src > types`: contains reusable types/interfaces
 - `src > stores`: contains stores for global state management
 - `src > pages`: contains page routes
-- `src > lib`: contains libraries/services that used both by the front-end _(fe folder)_ and back-end _(api folder)_
+- `src > lib`: contains libraries/services that are used both by the front-end _(fe folder)_ and back-end _(api folder)_
 - `src > constants`: contains reusable constants
 - `src > config`: contains configuration files
 - `src > components`: contains reusable components that are used by the front-end
@@ -68,7 +68,7 @@ Applicant Schema:
 
 ## Tests
 
-No regression or unit test was done in this, though code was made to be testable when needed.
+No regression or unit test was done in this, though the code was made to be testable when needed.
 
 ## Database Migration
 
@@ -88,7 +88,7 @@ Run the development server:
 npm start
 ```
 
-# How much time I spent on this?
+# How much time did I spend on this?
 6 hours including this documentation
 
 # Preview
