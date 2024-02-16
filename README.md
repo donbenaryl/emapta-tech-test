@@ -90,3 +90,10 @@ npm start
 
 # How much time I spent on this?
 6 hours including this documentation
+
+# Preview
+
+https://github.com/donbenaryl/emapta-tech-test/assets/64432607/3341b185-99bd-44cf-ab5f-bd7e77e5c795
+
+
+
